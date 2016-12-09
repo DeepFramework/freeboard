@@ -1,0 +1,18 @@
+<script type="text/x-handlebars-template">
+	<div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div id="PhotosWall_container">
+                    <div id="PhotosWall_photos" class="PhotosWall_photos">
+                        {{#each photos}}
+                            <div style="background-position:0px 0px;"><img src="{{thumb_image}}" alt="" /></div>
+                        {{/each}}
+                    </div>
+                    <div id="image_loading" class="image_loading"></div>
+                    <div id="image_next" class="image_next"></div>
+                    <div id="image_prev" class="image_prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

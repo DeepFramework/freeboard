@@ -1,0 +1,20 @@
+.worldMap {
+	height: 800px;
+    width: 100%;
+ }
+
+.worldMap:-moz-full-screen {
+	height: 100%;
+}
+.worldMap:-webkit-full-screen {
+	height: 100%;
+}
+.worldMap:-ms-fullscreen {
+	height: 100%;
+}
+.worldMap:fullscreen {
+	height: 100%;
+}
+.ol-rotate {
+	top: 3em;
+}

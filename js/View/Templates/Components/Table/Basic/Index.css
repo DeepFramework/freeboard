@@ -1,0 +1,42 @@
+#M_Table_Basic table {
+	font-family: "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	border-color: #fff;
+	border-collapse: collapse;
+	background: white;
+	margin-bottom: 1.25rem;
+	border: none 0 #dddddd;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.5;
+	cursor: auto;
+}
+
+#M_Table_Basic table thead {
+	/*background: whitesmoke;*/
+}
+
+#M_Table_Basic table tr th {
+	font-size: 14px;
+	padding: 8px 5px;
+	border: 1px solid #fff;
+	border-bottom: 1px solid #dddddd;
+}
+
+#M_Table_Basic table thead tr th {
+	display: table-cell;
+	line-height: 1.125rem;
+	font-weight: 700;
+	color: #6d6d6d;
+	text-align: center;
+}
+
+#M_Table_Basic table tr td {
+	font-size: 12px;
+	padding: 5px;
+	text-align: center;
+	border: 1px solid #fff;
+}
+
+#M_Table_Basic table tbody {
+	overflow-y: auto;
+}

@@ -1,0 +1,36 @@
+<script type="text/x-handlebars-template">
+	<div class="container information">
+		<div class="animatedParent">
+			<h1 id="services" class="text-center title animated growIn slowest">{{TITLE}}</h1>
+		</div>
+		<div class="space"></div>
+		<div class="row">
+			{{#each services}}
+				<div class="col-sm-6 animatedParent animateOnce" data-sequence='500'>
+					{{#each options}}
+						<div class="media animated growIn" data-id='{{no}}'>
+							{{#if left_flag}}{{^}}
+								<div class="media-left">
+									<i class="fa {{icon}}"></i>
+								</div>
+							{{/if}}
+							<div class="media-body text-{{#if left_flag}}right{{^}}left{{/if}}">
+								<h4 class="media-heading">{{title}}</h4>
+								<p class="media-content">{{content}}</p>
+							</div>
+							{{#if left_flag}}
+								<div class="media-right">
+									<i class="fa {{icon}}"></i>
+								</div>
+							{{/if}}
+						</div>
+					{{/each}}
+				</div>
+				{{#if @index}}
+				{{^}}
+				<div class="space visible-xs"></div>
+				{{/if}}
+			{{/each}}
+		</div>
+	</div>
+</script>

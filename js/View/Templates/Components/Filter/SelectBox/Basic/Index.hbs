@@ -1,0 +1,9 @@
+<script type="text/x-handlebars-template">
+	<div id="M_filter_SelectBox_Basic">
+	    <select class="selectpicker">
+	        {{#each PrepareData.selectOptions}}
+                <option value="{{value}}" {{#if isDisabled}}disabled{{^}}{{/if}}>{{#translatedByLocal title}}{{/translatedByLocal}}</option>
+            {{/each}}
+        </select>
+	</div>
+</script>
